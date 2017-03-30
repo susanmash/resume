@@ -1,0 +1,305 @@
+/*********** Fonts **************/
+/* latin */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans'), local('OpenSans'), url(https://fonts.gstatic.com/s/opensans/v13/cJZKeOuBrn4kERxqtaUH3VtXRa8TVwTICgirnJhmVJw.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
+/* latin */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Open Sans Semibold'), local('OpenSans-Semibold'), url(https://fonts.gstatic.com/s/opensans/v13/MTP_ySUJH_bn48VBG8sNSugdm0LZdjqr5-oayXSOefg.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
+/* latin */
+@font-face {
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Roboto Slab Light'), local('RobotoSlab-Light'), url(https://fonts.gstatic.com/s/robotoslab/v6/dazS1PrQQuCxC3iOAJFEJUo2lTMeWA_kmIyWrkNCwPc.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
+/* latin */
+@font-face {
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Roboto Slab Bold'), local('RobotoSlab-Bold'), url(https://fonts.gstatic.com/s/robotoslab/v6/dazS1PrQQuCxC3iOAJFEJYlIZu-HDpmDIZMigmsroc4.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
+@font-face {
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Roboto Slab Regular'), local('RobotoSlab-Regular'), url(https://fonts.gstatic.com/s/robotoslab/v6/y7lebkjgREBJK96VQi37Zo4P5ICox8Kq3LLUNMylGO4.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
+/*********** Icons **************/
+@font-face {
+    font-family: 'si';
+    src: url('./icons/socicon.eot');
+    src: url('./icons/socicon.eot?#iefix') format('embedded-opentype'),
+         url('./icons/socicon.woff') format('woff'),
+         url('./icons/socicon.ttf') format('truetype'),
+         url('./icons/socicon.svg#icomoonregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    @font-face {
+        font-family:si;
+        src: url(PATH_TO/socicon.svg) format(svg);
+    }
+}
+
+.soc {
+    overflow:hidden;
+    margin:0; padding:0;
+    list-style:none;
+}
+
+.soc li {
+    display:inline-block;
+    *display:inline;
+    zoom:1;
+    padding-top: 10px;
+    padding-right: 6px;
+}
+
+.soc li a {
+    font-family:si!important;
+    font-style:normal;
+    font-weight:400;
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    -ms-box-sizing:border-box;
+    -o-box-sizing:border-box;
+    box-sizing:border-box;
+    overflow:hidden;
+    text-decoration:none;
+    text-align:center;
+    display:block;
+    position: relative;
+    z-index: 1;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    font-size: 1.1em;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    border-radius: 100px;
+    margin-right: 10px;
+    color: #F8F9F9;
+    /*background-color: #414141;*/
+    background-color: #F57354;
+}
+
+.soc-icon-last{
+    margin:0 !important;
+}
+
+.soc-linkedin:before {
+    content:'\e049';
+}
+.soc-github:before {
+    content:'\e030';
+}
+
+
+/*********** Base Styles **************/
+
+*{
+  box-sizing: border-box;
+}
+
+a{
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4{
+  font-family: 'Roboto Slab', serif;
+}
+
+h1{
+  font-weight: 300;
+}
+
+h2{
+  font-weight: 700;
+}
+
+p,
+a,
+span{
+  font-family: 'Open Sans', sans-serif;
+}
+
+/*********** Layout Styles **************/
+
+.main-content{
+  width: 90%;
+  margin: 0 auto;
+  /*text-align: center;*/
+}
+
+.main-header{
+  width: 25%;
+  margin: 2.4% auto 0px 4%;
+  padding-bottom: 1%;
+  padding-left: .6%;
+  display: inline-block;
+}
+
+.main-header > h2{
+  margin: .4% auto;
+}
+
+.main-header > h2:nth-child(3){
+  margin-bottom: .85%;
+}
+
+.main-header > h1{
+  margin: .5% auto 2% auto;
+}
+
+.toolbox,
+.edu{
+  width: 22%;
+  vertical-align: top;
+  margin: 0 2.5%;
+}
+
+.edu{
+  margin-right: 46%;
+}
+
+.exp{
+  text-align: left;
+  margin-bottom: 8%;
+  width: 90%;
+  margin: 0 auto;
+  padding-left: 3.2%;
+}
+
+.toolbox > h3{
+  margin: .5%;
+}
+
+.about{
+  width: 65%;
+  margin-left: -5px;
+  margin-top: 2.4%;
+  padding: 2%;
+  padding-bottom: 4%;
+  display: inline-block;
+  vertical-align: top;
+  height
+}
+
+.about > p {
+  margin: auto;
+  line-height: 1.8em;
+}
+
+.exp > p{
+  width: 50%;
+  margin: auto 0;
+}
+
+.flex-wrap{
+  display: flex;
+  width: 90%;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+.banner {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.exp > p.src-link{
+  margin-top: 2%;
+}
+
+/*********** Theme Styles **************/
+
+.main-header,
+.about{
+  color: #2E86C1;
+  background-color: #F8F9F9;
+}
+
+.banner{
+  border-bottom: 1px solid #414141;
+  background-color: #F8F9F9;
+}
+
+.main-header > span{
+  /*color: #414141;*/
+  color: #257AB3;
+  font-size: .95em;
+}
+
+.main-header > a,
+.exp > p > a{
+  /*color: #E74C3C;*/
+  /*color: #CF122C;*/
+  color: #F57354;
+}
+
+.exp{
+  border-top: 1px solid #414141;
+  margin-bottom: 8%;
+}
+
+.exp > h2{
+  font-size: 1.8em;
+}
+.toolbox > h4,
+.exp > h4{
+  font-size: 1.3em;
+}
+
+.toolbox > p,
+.edu > p,
+.exp > p,
+.exp > a{
+  font-size: 1.1em;
+}
+
+.about{
+  /*text-align: center;*/
+}
+.about > p{
+  font-size: 1.22em;
+  font-weight: 400;
+  font-family: 'Roboto Slab', serif;
+  /*color: #1ABC9C;*/
+  color: #5DADE2;
+}
+
+.main-header > h1{
+  font-size: 2.3em;
+}
+
+.main-content{
+  color: #414141;
+}
